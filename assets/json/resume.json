@@ -40,16 +40,16 @@
       "area": "Robotics",
       "studyType": "PhD",
       "startDate": "2024-04-01",
-      "endDate": "",
+      "endDate": ""
     },
     {
-      "institution": "University of Souther California",
+      "institution": "University of Southern California",
       "location": "Los Angeles, CA",
       "url": "https://www.usc.edu",
       "area": "Computer Science",
-      "studyType": "Master",
+      "studyType": "Masters",
       "startDate": "2022-01-01",
-      "endDate": "2023-12-14",
+      "endDate": "2023-12-14"
     },
     {
       "institution": "University of Michigan",
@@ -58,9 +58,10 @@
       "area": "Computer Science",
       "studyType": "Bachelor",
       "startDate": "2019-12-01",
-      "endDate": "2021-5-10",
-    },
-  ],
+      "endDate": "2021-5-10"
+    }
+  ]
+,
   "languages": [
     {
       "language": "Mandarin",
