@@ -11,23 +11,26 @@
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of California, Riverside
-      year: 2024
+    - title: PhD in Electrical Engineering
+      institution: University of California - Riverside
+      year: 2024 - ?
       description:
         - Current reseach interest lies in the Generalization of Multi Robot Collaboration
-    - title: Masters
+    - title: Master's in Computer Science
       institution: University of Southern California
       year: 2022-2023
       description:
         - Conducted Researches at DRCL Laboratory under the direction of Professor Quan Nguyen.
+    - title: Bachelor's in Computer Science
+      institution: University of Michigan - Ann Arbob
+      year: 2019-2021
 
 - title: Experience
   type: time_table
   contents:
     - title: Graduate Student Researcher
       institution: Trustworthy Autonomous Systems Laboratory, University of California - Riverside
-      year: 2024
+      year: 2024 - Now
       description:
         - Conducting researches under the direction of advisor Jianchen Li
     - title: Graduate Research Assistant
@@ -40,4 +43,4 @@
 - title: Other Interests
   type: list
   contents:
-    - Hobbies: Photography, Travel
+     - <u>Hobbies:</u> Photography, Travel
