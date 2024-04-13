@@ -13,7 +13,7 @@ profile:
     <p>N Campus Dr, </p>
     <p>Riverside, CA 92507</p>
 
-news: false # includes a list of news items
+news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
