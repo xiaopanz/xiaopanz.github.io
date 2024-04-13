@@ -3,6 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: A first-year PhD student at Trustworthy Autonomous Systems Laboratory, UC - Riverside
+
 profile:
   align: right
   image: prof_pic.jpg
