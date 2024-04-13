@@ -2,8 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
-
+subtitle: A first-year PhD student at Trustworthy Autonomous Systems Laboratory, UC - Riverside
 profile:
   align: right
   image: prof_pic.jpg
