@@ -15,12 +15,13 @@
       institution: University of California, Riverside
       year: 2024
       description:
-        - Reseach interest lies in the Generalization of Multi Robot Collaboration
+        - Current reseach interest lies in the Generalization of Multi Robot Collaboration
     - title: Masters
       institution: University of Southern California
       year: 2022-2023
       description:
-        - Conducting Researches at DRCL Laboratory under the direction of Professor Quan Nguyen.
+        - Conducted Researches at DRCL Laboratory under the direction of Professor Quan Nguyen.
+
 - title: Experience
   type: time_table
   contents:
@@ -29,7 +30,7 @@
       year: 2024
       description:
         - Conducting researches under the direction of advisor Jianchen Li
-  - title: Graduate Research Assistant
+    - title: Graduate Research Assistant
       institution: Dynamic Robotics and Control Laboratory, University of Southern California
       year: 2022-2023
       description:
@@ -39,4 +40,4 @@
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Photography, Travel
+    - Hobbies: Photography, Travel
