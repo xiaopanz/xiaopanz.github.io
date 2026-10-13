@@ -54,9 +54,11 @@ jobs:
           # Check external links in personal content; theme docs and demo posts are not published.
           # The companion site check validates internal links after Liquid is rendered.
           # Google Scholar rate-limits automated requests; keep its link for visitors.
+          # The verified Michigan homepage returns 403 specifically to GitHub runners.
           args: >-
             --exclude '^file://'
             --exclude '^https://scholar\.google\.com/'
+            --exclude '^https://umich\.edu/?$'
             --exclude-path _pages/404.md
             --exclude-path _pages/dropdown.md
             --max-concurrency 8 --max-retries 2 --timeout 30
