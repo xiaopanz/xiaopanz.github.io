@@ -5,22 +5,40 @@ on:
     workflows: [Deploy site]
     types: [completed]
 
+permissions:
+  contents: read
+
 jobs:
   check-links-on-site:
     # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#running-a-workflow-based-on-the-conclusion-of-another-workflow
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    if: >-
+      ${{ github.event.workflow_run.conclusion == 'success'
+          && github.event.workflow_run.event != 'pull_request'
+          && github.event.workflow_run.head_repository.full_name == github.repository
+          && (github.event.workflow_run.head_branch == 'master' || github.event.workflow_run.head_branch == 'main') }}
     # available images: https://github.com/actions/runner-images#available-images
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+          persist-credentials: false
+      - name: Setup Node.js ⚙️
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.2.2"
           bundler-cache: true
+      - name: Setup Python 🐍
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
       - name: Update _config.yml ⚙️
-        uses: fjogeleit/yaml-update-action@main
+        uses: fjogeleit/yaml-update-action@dffe9a5223d84653c13374032382f6bb5de8e5ef # v0.17.0
         with:
           commitChange: false
           valueFile: "_config.yml"
@@ -31,9 +49,11 @@ jobs:
             }
       - name: Install and Build 🔧
         run: |
-          pip3 install --upgrade jupyter
+          sudo apt-get update && sudo apt-get install -y imagemagick
+          pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
-          bundle exec jekyll build --lsi
+          export EXECJS_RUNTIME=Node
+          bundle exec jekyll build
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss

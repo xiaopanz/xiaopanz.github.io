@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Graudated from USC. Go Trojans!
+Graduated from USC. Go Trojans!

@@ -2,45 +2,140 @@
   type: map
   contents:
     - name: Full Name
-      value: Xiaopan Zhang
+      value: Xiaopan Zhang (张晓攀)
     - name: Date of Birth
       value: October 13th 1997
     - name: Languages
       value: English, Mandarin
+    - name: Email
+      value: <a href="mailto:xzhang877@gatech.edu">xzhang877@gatech.edu</a>
+    - name: Google Scholar
+      value: <a href="https://scholar.google.com/citations?user=iLrGkU4AAAAJ&hl=en">Xiaopan Zhang</a>
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD in Electrical Engineering
-      institution: University of California - Riverside
-      year: 2024 - Now
+    - title: Ph.D. Student in Machine Learning
+      institution: Georgia Institute of Technology
+      year: Aug. 2026 - Present
+      location: Atlanta, GA
       description:
-        - Current reseach interest lies in the Generalization of Multi Robot Collaboration
-    - title: Master's in Computer Science
+        - Ph.D. student since Aug. 2026, advised by Prof. <a href="https://jiachenli94.github.io">Jiachen Li</a>.
+        - Research interests include embodied AI agents, multi-robot systems, reinforcement learning in robotics, trustworthy autonomy, and robot navigation.
+    - title: Ph.D. Studies in Electrical Engineering
+      institution: University of California, Riverside
+      year: Mar. 2024 - Aug. 2026
+      location: Riverside, CA
+      description:
+        - Ph.D. student from Mar. 2024 to Aug. 2026 in the <a href="https://tasl.ucr.edu">Trustworthy Autonomous Systems Laboratory (TASL)</a>, advised by Prof. Jiachen Li.
+        - Research on the generalization of multi-robot collaboration. Transferred to Georgia Tech in Aug. 2026.
+    - title: M.S. in Computer Science
       institution: University of Southern California
-      year: 2022-2023
+      year: Jan. 2022 - Dec. 2023
+      location: Los Angeles, CA
       description:
-        - Conducted Researches at <a href="https://sites.usc.edu/quann/">DRCL</a> Laboratory under the direction of Professor Quan Nguyen.
-    - title: Bachelor's in Computer Science
-      institution: University of Michigan - Ann Arbor
-      year: 2019-2021
+        - Conducted research at the <a href="https://sites.usc.edu/quann/">Dynamic Robotics and Control Laboratory (DRCL)</a> under the direction of Prof. Quan Nguyen.
+    - title: B.S. in Computer Science
+      institution: University of Michigan, Ann Arbor
+      year: Jan. 2019 - May 2021
+      location: Ann Arbor, MI
 
 - title: Experience
   type: time_table
   contents:
     - title: Graduate Student Researcher
-      institution: Trustworthy Autonomous Systems Laboratory, University of California - Riverside
-      year: 2024 - Now
+      institution: Georgia Institute of Technology
+      year: Aug. 2026 - Present
       description:
-        - Conducting researches under the direction of advisor Jianchen Li
+        - Developing an intervention-guided framework for mobile manipulation that traces failures across navigation, perception, and contact, coordinates physical recovery, and selectively adapts robot skills, residual controllers, and VLA policies to improve long-term autonomy and task performance.
+        - Developed object-goal navigation methods using foundation models as reward generators for reinforcement learning, enabling semantic, task-aware, goal-conditioned decisions without continuous high-latency foundation-model queries.
+    - title: Student Associate
+      institution: Honda Research Institute USA, Inc. (HRI-US)
+      year: Jun. 2026 - Aug. 2026
+      description:
+        - Developed <b>SituLaMP</b>, an LLM/VLM-based framework for long-horizon multi-robot planning, execution-time failure detection, dynamic replanning, and task reallocation while preserving unaffected plan structure.
+        - Implemented PDDL planning, multi-robot simulation, and recovery logic for action, perception, and environmental failures, enabling robust online execution and localized recovery across heterogeneous robot teams.
+        - Designed benchmark experiments across multi-robot and embodied-agent tasks to evaluate task completion, robustness, recovery efficiency, generalization, and recovery cost across diverse execution failures.
+    - title: Robotics Research Intern
+      institution: AlphaZ, Inc.
+      year: Jun. 2025 - Dec. 2025
+      description:
+        - Developed <b>StratMamba</b>, a dual-stream Mamba-based PPO architecture that separates reactive obstacle processing from strategic goal-directed navigation for efficient LiDAR-based obstacle avoidance in cluttered environments.
+        - Built scalable training and evaluation pipelines in IsaacLab and Gazebo for obstacle-rich navigation with quadruped and wheeled robots, and deployed the learned policy on a real Unitree GO1 robot using ROS2, RSLidar-16, VICON localization, and real-time velocity control.
+        - Benchmarked against LSTM, Transformer, and vanilla Mamba baselines, improving timeout rate, path efficiency, navigation speed, and sim-to-real robustness. The work resulted in an IROS 2026 paper.
+    - title: Graduate Student Researcher
+      institution: Trustworthy Autonomous Systems Laboratory, University of California, Riverside
+      year: Mar. 2024 - Aug. 2026
+      description:
+        - Conducted research on trustworthy embodied and multi-agent robotic systems spanning coordination, task allocation, object-goal navigation, uncertainty calibration, and long-horizon planning, resulting in multiple peer-reviewed publications.
+        - Developed object-goal navigation methods using foundation models as reward generators for reinforcement learning, enabling semantic, task-aware, goal-conditioned decisions without continuous high-latency foundation-model queries.
+        - Designed heterogeneous multi-agent planning and communication frameworks for long-horizon, multi-objective tasks in partially observable environments, with capability-aware task allocation and calibrated inter-agent information exchange.
+        - Proposed a two-stage fine-tuned reasoning model (supervised fine-tuning + reinforcement learning) that directly generates executable PDDL plans, enabling adaptive multi-robot task allocation without heuristic search.
+        - Integrated learning-based policies with classical planning and safety constraints to improve robustness, generalization, reliability, and deployment readiness across real-world robotic systems and environments.
     - title: Graduate Research Assistant
       institution: Dynamic Robotics and Control Laboratory, University of Southern California
-      year: 2022-2023
+      year: Jan. 2022 - Dec. 2023
       description:
-        - Co-worked on a large scale robotics project which aims to control multiple four-legged robots for an enhanced exploration and task execution.
-        - Conducted comprehensive testing of multi-robot collaboration in both simulated environments and real-world scenarios, focusing on strawberry and raspberry fields.
+        - Contributed to a large-scale multi-robot project that controls multiple quadruped (four-legged) robots for enhanced exploration and task execution.
+        - Developed task allocation, path planning, and coordination strategies for coordinated exploration with quadruped robot teams.
+        - Conducted extensive testing, validation, and data collection of multi-robot collaboration in simulation and in real-world agricultural environments, including strawberry and raspberry fields.
+
+- title: Research Projects
+  type: nested_list
+  contents:
+    - title: "CoReNav: Conformal Calibrated Foundation Model Rewards for Object Navigation"
+      items:
+        - Proposed a compute-efficient object-goal navigation framework that combines imitation learning with reinforcement learning fine-tuning driven by foundation-model-based rewards, enabling semantically guided exploration without continuous high-latency model querying.
+        - Applied conformal prediction to calibrate foundation-model outputs in the navigation loop, including VLM-based room classification and LLM-generated object relevance priors, producing trust-aware rewards that mitigate hallucinations and stabilize RL fine-tuning.
+        - Evaluated on the HM3D Semantics dataset, showing improvements over baselines in success rate, path optimality, and time efficiency in photo-realistic environments.
+    - title: "CommCP: Efficient Multi-Agent Coordination via LLM-Based Communication with Conformal Prediction (ICRA 2026)"
+      items:
+        - Formulated the information-gathering process for natural-language assignments as a multi-agent multi-task embodied question answering (MM-EQA) problem, where robots collaborate in a shared environment and communicate to exchange information and answers.
+        - Proposed CommCP, an LLM-based decentralized communication framework for MM-EQA that uses conformal prediction to calibrate generated messages, reducing distractions to other agents while improving communication reliability and efficiency.
+        - Created an MM-EQA benchmark with photo-realistic scenarios from the HM3D dataset and released it to facilitate future research.
+    - title: "LaMMA-P: Generalizable Multi-Agent Long-Horizon Task Allocation and Planning with LM-Driven PDDL Planner (ICRA 2025)"
+      items:
+        - Introduced LaMMA-P, a framework that integrates LLM reasoning with PDDL planning heuristics to solve long-horizon task planning for heterogeneous robot teams with a flexible number of agents.
+        - Developed a modular system design that connects LLMs, PDDL planners, and simulation environments to support flexible task decomposition and efficient sub-task allocation based on robot skills and capabilities.
+        - Created MAT-THOR, a benchmark of multi-agent long-horizon tasks based on AI2-THOR with standardized tasks and metrics, achieving state-of-the-art success rate and efficiency.
+
+- title: Selected Publications
+  type: list
+  contents:
+    - "H. Wu, <b>X. Zhang</b>, K. Sinaei, R. Abnavi, K. Weerakoon, C. Bradley, S. Fakoorian, J. Li, D. Ebeigbe. <b>StratMamba: Strategic and Reactive Stream Partitioning for Path-Efficient LiDAR-Based Obstacle Avoidance.</b> <i>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</i>, 2026."
+    - "<b>X. Zhang</b>, Z. Wang, Z. Li, J. Yao, J. Li. <b>CommCP: Efficient Multi-Agent Coordination via LLM-Based Communication with Conformal Prediction.</b> <i>IEEE International Conference on Robotics and Automation (ICRA)</i>, 2026."
+    - "M. Gao, X. Li, Q. Yan, X. Sun, <b>X. Zhang</b>, C.-M. Huang, J. Li. <b>GUIDES: Guidance Using Instructor-Distilled Embeddings for Pre-trained Robot Policy Enhancement.</b> <i>IEEE International Conference on Robotics and Automation (ICRA)</i>, 2026."
+    - "<b>X. Zhang</b>, H. Qin, F. Wang, Y. Dong, J. Li. <b>LaMMA-P: Generalizable Multi-Agent Long-Horizon Task Allocation and Planning with LM-Driven PDDL Planner.</b> <i>IEEE International Conference on Robotics and Automation (ICRA)</i>, 2025."
+    - J. Yao, <b>X. Zhang</b>, Y. Xia, Z. Wang, A. K. Roy-Chowdhury, J. Li. <b>Towards Generalizable Safety in Crowd Navigation via Conformal Uncertainty Handling.</b> <i>Conference on Robot Learning (CoRL)</i>, 2025.
+    - "T. Chakraborty, U. Ghosh, <b>X. Zhang</b>, F. F. Niloy, Y. Dong, J. Li, A. K. Roy-Chowdhury, C. Song. <b>HEAL: An Empirical Study on Hallucinations in Embodied Agents Driven by Large Language Models.</b> <i>Findings of the Association for Computational Linguistics: EMNLP</i>, 2025."
+    - The full list is on the <a href="/publications/">publications</a> page.
+
+- title: Technical Skills
+  type: list_groups
+  contents:
+    - category: Robot Learning
+      items:
+        - name: Reinforcement learning and PPO
+        - name: Imitation learning
+        - name: Supervised fine-tuning and reinforcement learning for reasoning models
+        - name: Mamba-based robot policies
+    - category: Planning and Foundation Models
+      items:
+        - name: PDDL planning and task allocation
+        - name: LLM/VLM-based planning, verification, and reward generation
+        - name: Conformal prediction and uncertainty calibration
+    - category: Robotics Platforms and Tools
+      items:
+        - name: ROS2, IsaacLab, and Gazebo
+        - name: Unitree GO1 and real-time velocity control
+        - name: RSLidar-16 and VICON localization
+    - category: Embodied AI Benchmarks
+      items:
+        - name: HM3D Semantics
+        - name: AI2-THOR and MAT-THOR
+        - name: Multi-agent multi-task embodied question answering (MM-EQA)
 
 - title: Other Interests
   type: list
   contents:
-     - <u>Hobbies:</u> Photography, Travel
+    - <u>Hobbies:</u> Photography, Travel
