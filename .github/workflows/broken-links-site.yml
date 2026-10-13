@@ -17,15 +17,15 @@ jobs:
           && github.event.workflow_run.head_repository.full_name == github.repository
           && (github.event.workflow_run.head_branch == 'master' || github.event.workflow_run.head_branch == 'main') }}
     # available images: https://github.com/actions/runner-images#available-images
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: ${{ github.event.workflow_run.head_sha }}
           persist-credentials: false
       - name: Setup Node.js ⚙️
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "22"
       - name: Setup Ruby
@@ -59,8 +59,16 @@ jobs:
           npm install -g purgecss
           purgecss -c purgecss.config.js
       - name: Link Checker 🔗
-        uses: lycheeverse/lychee-action@v1.9.0
+        uses: lycheeverse/lychee-action@v2
         with:
           fail: true
+          lycheeVersion: v0.24.2
           # only check local links
-          args: --offline --remap '_site(/?.*)/assets/(.*) _site/assets/$2' --verbose --no-progress '_site/**/*.html'
+          args: --offline --root-dir _site --index-files index.html --include-fragments --verbose --no-progress '_site/**/*.html'
+      - name: Upload link report
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: site-link-report
+          path: lychee/out.md
+          if-no-files-found: ignore

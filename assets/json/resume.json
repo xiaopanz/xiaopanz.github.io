@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Xiaopan Zhang",
-    "label": "Ph.D. Student in Machine Learning",
+    "label": "Third-year Ph.D. Student in Machine Learning",
     "image": "",
     "email": "xzhang877@gatech.edu",
     "phone": "(734)773-7571",
     "url": "https://xiaopanz.github.io/",
-    "summary": "Ph.D. student in Machine Learning at the Georgia Institute of Technology, advised by Prof. Jiachen Li. Research interests include embodied AI agents, multi-robot systems, reinforcement learning in robotics, trustworthy autonomy, and robot navigation.",
+    "summary": "Third-year Ph.D. student in Machine Learning at the Georgia Institute of Technology, advised by Prof. Jiachen Li. Research interests include embodied AI agents, multi-robot systems, reinforcement learning in robotics, trustworthy autonomy, and robot navigation.",
     "location": {
       "city": "Atlanta",
       "countryCode": "US",
@@ -58,7 +58,7 @@
     {
       "name": "AlphaZ, Inc.",
       "position": "Robotics Research Intern",
-      "startDate": "2025-06",
+      "startDate": "2025-07",
       "endDate": "2025-12",
       "highlights": [
         "Developed StratMamba, a dual-stream Mamba-based PPO architecture that separates reactive obstacle processing from strategic goal-directed navigation for efficient LiDAR-based obstacle avoidance in cluttered environments.",
@@ -69,7 +69,7 @@
     {
       "name": "Trustworthy Autonomous Systems Laboratory, University of California, Riverside",
       "position": "Graduate Student Researcher",
-      "url": "https://tasl.ucr.edu",
+      "url": "https://www.ucr.edu",
       "startDate": "2024-03",
       "endDate": "2026-08",
       "summary": "Research on trustworthy multi-agent robotic systems (coordination, task allocation, object-goal navigation), advised by Prof. Jiachen Li.",
@@ -105,7 +105,7 @@
       "startDate": "2026-08",
       "endDate": "",
       "courses": [
-        "Ph.D. student since Aug. 2026, advised by Prof. Jiachen Li.",
+        "Third-year Ph.D. student, advised by Prof. Jiachen Li. Joined Georgia Tech in Aug. 2026 after transferring from UC Riverside.",
         "Research interests include embodied AI agents, multi-robot systems, reinforcement learning in robotics, trustworthy autonomy, and robot navigation."
       ]
     },

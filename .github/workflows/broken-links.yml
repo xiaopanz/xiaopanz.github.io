@@ -40,13 +40,29 @@ on:
 
 jobs:
   link-checker:
-    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Link Checker 🔗
-        uses: lycheeverse/lychee-action@v1.9.0
+        uses: lycheeverse/lychee-action@v2
         with:
           fail: true
-          # removed md files that include liquid tags
-          args: --exclude-path README.md --exclude-path _pages/404.md --exclude-path _pages/blog.md --exclude-path _posts/2018-12-22-distill.md --verbose --no-progress './**/*.md' './**/*.html'
+          lycheeVersion: v0.24.2
+          # Check external links in personal content; theme docs and demo posts are not published.
+          # The companion site check validates internal links after Liquid is rendered.
+          args: >-
+            --exclude '^file://'
+            --exclude-path _pages/404.md
+            --exclude-path _pages/dropdown.md
+            --max-concurrency 8 --max-retries 2 --timeout 30
+            --verbose --no-progress './_pages/*.md' './_news/*.md'
+      - name: Upload link report
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: source-link-report
+          path: lychee/out.md
+          if-no-files-found: ignore

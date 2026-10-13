@@ -36,7 +36,7 @@ on:
 
 jobs:
   lighthouse-badger-easy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 8
     steps:
       - name: Preparatory Tasks
@@ -47,12 +47,12 @@ jobs:
           echo "BRANCH=$BRANCH" >> $GITHUB_ENV
         env:
           REPO_BRANCH: ${{ env.REPO_BRANCH }}
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           repository: ${{ env.REPOSITORY }}
           token: ${{ secrets[github.event.inputs.token_name] || secrets[env.TOKEN_NAME] }}
           ref: ${{ env.BRANCH }}
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           repository: "myactionway/lighthouse-badges"
           path: temp_lighthouse_badges_nested

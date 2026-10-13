@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620" role="img" aria-labelledby="title desc">
+  <title id="title">Robot-assisted strawberry harvesting</title>
+  <desc id="desc">
+    A paper-inspired overview: human pickers request tray transport, predictive scheduling assigns quadruped robots, and robots deliver crops to a
+    collection station.
+  </desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10" fill="#426f55" /></marker>
+  </defs>
+  <rect width="1000" height="620" fill="#f8faf6" />
+  <g fill="#e4eddc">
+    <rect x="38" y="130" width="924" height="50" rx="25" />
+    <rect x="38" y="290" width="924" height="50" rx="25" />
+    <rect x="38" y="450" width="924" height="50" rx="25" />
+  </g>
+  <g font-family="Arial, sans-serif" fill="#233b2a" text-anchor="middle">
+    <text x="500" y="62" font-size="34" font-weight="700">Robot-assisted strawberry harvesting</text>
+    <text x="500" y="100" font-size="22">Human pickers · predictive scheduling · quadruped transport</text>
+    <rect x="64" y="192" width="230" height="224" rx="20" fill="#fff" stroke="#b4c9a8" stroke-width="2" />
+    <circle cx="135" cy="256" r="24" fill="#c95851" />
+    <path
+      d="M111 285L95 345M159 285L174 345M135 280V353M135 351L115 382M135 351L155 382"
+      fill="none"
+      stroke="#233b2a"
+      stroke-width="12"
+      stroke-linecap="round"
+    />
+    <rect x="185" y="286" width="65" height="42" rx="7" fill="#c95851" />
+    <text x="179" y="222" font-size="23" font-weight="700">Human pickers</text>
+    <text x="179" y="405" font-size="19">Harvest and request trays</text>
+    <rect x="386" y="210" width="230" height="194" rx="20" fill="#fff" stroke="#b4c9a8" stroke-width="2" />
+    <text x="501" y="249" font-size="22" font-weight="700">Predictive scheduler</text>
+    <text x="501" y="291" font-size="20">Assign transport tasks</text>
+    <text x="501" y="325" font-size="20">Adapt to picker delays</text>
+    <text x="501" y="359" font-size="20">Coordinate robot teams</text>
+    <rect x="708" y="192" width="230" height="224" rx="20" fill="#fff" stroke="#b4c9a8" stroke-width="2" />
+    <text x="823" y="226" font-size="23" font-weight="700">Quadruped robots</text>
+    <rect x="759" y="278" width="108" height="45" rx="12" fill="#426f55" />
+    <rect x="776" y="258" width="70" height="24" rx="5" fill="#c95851" />
+    <path
+      d="M772 318L753 355L740 379M796 319L806 351L811 379M838 318L845 350L860 379M859 318L883 348L891 379"
+      fill="none"
+      stroke="#426f55"
+      stroke-width="11"
+      stroke-linecap="round"
+    />
+    <text x="823" y="405" font-size="19">Transport harvested crops</text>
+    <text x="500" y="552" font-size="24" font-weight="700">Collection station</text>
+    <text x="500" y="587" font-size="20">Return empty trays · reduce non-picking time</text>
+  </g>
+  <g fill="none" stroke="#426f55" stroke-width="4" marker-end="url(#arrow)">
+    <path d="M298 307H372" />
+    <path d="M621 307H694" />
+    <path d="M823 424V530H654" />
+    <path d="M348 540H179V430" />
+  </g>
+</svg>

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-One paper is accepted by ICRA2024!
+Our paper <a href="{{ '/publications/' | relative_url }}#chen2024robotteams">Accounting for Travel Time and Arrival Time Coordination During Task Allocations in Legged-Robot Teams</a> has been accepted to <b>ICRA 2024</b>!

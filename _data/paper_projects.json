@@ -1,0 +1,97 @@
+[
+  {
+    "id": "wu2026stratmamba",
+    "name": "StratMamba",
+    "title": "Strategic and Reactive Stream Partitioning for Path-Efficient LiDAR-Based Obstacle Avoidance",
+    "venue": "IROS 2026",
+    "image": "stratmamba.jpg",
+    "alt": "StratMamba architecture with reactive proximity and strategic goal streams",
+    "summary": "Dual-stream Mamba policies balance reactive obstacle avoidance with strategic navigation, with simulation training and deployment on a real quadruped.",
+    "paper": "https://arxiv.org/abs/2607.12370",
+    "website": "https://hcwu7702.github.io/stratmamba.html",
+    "image_source": "https://hcwu7702.github.io/assets/projects/stratmamba/Overview.jpg"
+  },
+  {
+    "id": "zhang2026commcp",
+    "name": "CommCP",
+    "title": "Efficient Multi-Agent Coordination via LLM-Based Communication with Conformal Prediction",
+    "venue": "ICRA 2026",
+    "image": "commcp.png",
+    "alt": "CommCP framework for multi-robot question answering and calibrated communication",
+    "summary": "Conformal prediction calibrates language-model messages so collaborating robots exchange useful information reliably in multi-agent embodied question answering.",
+    "paper": "https://arxiv.org/abs/2602.06038",
+    "website": "https://comm-cp.github.io/",
+    "code": "https://github.com/tasl-lab/CommCP",
+    "image_source": "https://comm-cp.github.io/img/framework.png"
+  },
+  {
+    "id": "gao2026guides",
+    "name": "GUIDES",
+    "title": "Guidance Using Instructor-Distilled Embeddings for Pre-Trained Robot Policy Enhancement",
+    "venue": "ICRA 2026",
+    "image": "guides.png",
+    "alt": "GUIDES framework injecting semantic guidance into pre-trained robot policies",
+    "summary": "Instructor-distilled embeddings give existing robot policies semantic guidance, while a reasoning-based reflector improves robustness when instructions are uncertain.",
+    "paper": "https://arxiv.org/abs/2511.03400",
+    "image_source": "https://mgao.me/assets/papers/guides.png"
+  },
+  {
+    "id": "zhang2025lamma",
+    "name": "LaMMA-P",
+    "title": "Generalizable Multi-Agent Long-Horizon Task Allocation and Planning with LM-Driven PDDL Planner",
+    "venue": "ICRA 2025",
+    "image": "lamma-p.png",
+    "alt": "LaMMA-P language-model and PDDL planning framework for heterogeneous robots",
+    "summary": "Language-model reasoning and PDDL planning support long-horizon, capability-aware task allocation for heterogeneous robot teams, evaluated with the MAT-THOR benchmark.",
+    "paper": "https://arxiv.org/abs/2409.20560",
+    "website": "https://lamma-p.github.io/",
+    "code": "https://github.com/tasl-lab/LaMMA-P",
+    "image_source": "https://lamma-p.github.io/img/framework.png"
+  },
+  {
+    "id": "yaotowards",
+    "name": "Safe Crowd Navigation",
+    "title": "Towards Generalizable Safety in Crowd Navigation via Conformal Uncertainty Handling",
+    "venue": "CoRL 2025",
+    "image": "crowd-navigation.svg",
+    "alt": "Uncertainty-aware crowd navigation with conformal inference and constrained reinforcement learning",
+    "summary": "Adaptive conformal inference estimates pedestrian uncertainty and guides constrained reinforcement learning for safer navigation under distribution shifts.",
+    "paper": "https://proceedings.mlr.press/v305/yao25a.html",
+    "website": "https://gen-safe-nav.github.io/",
+    "code": "https://github.com/tasl-lab/GenSafeNav",
+    "image_source": "https://gen-safe-nav.github.io/img/overview.svg"
+  },
+  {
+    "id": "chakraborty2025heal",
+    "name": "HEAL",
+    "title": "An Empirical Study on Hallucinations in Embodied Agents Driven by Large Language Models",
+    "venue": "Findings of EMNLP 2025",
+    "image": "heal.png",
+    "alt": "HEAL hallucination probing and embodied-agent evaluation settings",
+    "summary": "A systematic study of hallucinations in language-model-driven embodied agents, examining how misleading scene and task information affects robotic planning.",
+    "paper": "https://aclanthology.org/2025.findings-emnlp.1158/",
+    "image_source": "https://arxiv.org/html/2506.15065v1/open_figure.png"
+  },
+  {
+    "id": "10.1115/DETC2024-145753",
+    "name": "Robot-Assisted Strawberry Harvesting",
+    "title": "Enhancing Efficiency of Human Pickers in Strawberry Harvesting With Quadruped Robots",
+    "venue": "ASME IDETC-CIE 2024",
+    "image": "strawberry.svg",
+    "alt": "Overview illustration of quadruped robots transporting trays for human strawberry pickers",
+    "summary": "Quadruped robots transport harvested crops while predictive scheduling adapts to uncertain picker behavior, reducing time spent away from harvesting.",
+    "paper": "https://doi.org/10.1115/DETC2024-145753",
+    "image_source": "Overview illustration based on the paper; not a reproduced experimental figure."
+  },
+  {
+    "id": "chen2024robotteams",
+    "name": "Coordinated Legged-Robot Teams",
+    "title": "Accounting for Travel Time and Arrival Time Coordination During Task Allocations in Legged-Robot Teams",
+    "venue": "ICRA 2024",
+    "image": "legged-team.jpeg",
+    "alt": "USC quadruped robot platform used in legged-robot research",
+    "summary": "Task allocation accounts for robot travel time and coordinated arrival, supporting more efficient collaboration among legged robots.",
+    "paper": "https://doi.org/10.1109/ICRA57147.2024.10610869",
+    "image_source": "Existing personal website publication photograph: assets/img/publication_preview/1707777605196.jpeg"
+  }
+]

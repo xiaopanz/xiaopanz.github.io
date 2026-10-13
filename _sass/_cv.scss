@@ -37,6 +37,56 @@ a.btncv:hover {
  * CV TIME_TABLE styles
  *****************************/
 
+.cv-timeline-row {
+  display: grid;
+  grid-template-columns: minmax(0, 12rem) minmax(0, 1fr);
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.cv-timeline-row-no-date {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.cv-timeline-date {
+  min-width: 0;
+
+  .cv-date-badge {
+    display: inline-block;
+    max-width: 100%;
+    padding: 0.4rem 0.6rem;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    line-height: 1.4;
+  }
+
+  .location {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    white-space: normal;
+  }
+}
+
+.cv-timeline-details {
+  min-width: 0;
+  overflow-wrap: break-word;
+
+  .institution {
+    max-width: 100%;
+  }
+
+  .items {
+    padding-left: 1.25rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .cv-timeline-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+}
+
 p.location {
   font-size: 0.7rem;
   white-space: nowrap;

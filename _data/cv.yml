@@ -20,14 +20,14 @@
       year: Aug. 2026 - Present
       location: Atlanta, GA
       description:
-        - Ph.D. student since Aug. 2026, advised by Prof. <a href="https://jiachenli94.github.io">Jiachen Li</a>.
+        - Third-year Ph.D. student, advised by Prof. <a href="https://jiachenli94.github.io">Jiachen Li</a>. Joined Georgia Tech in Aug. 2026 after transferring from UC Riverside.
         - Research interests include embodied AI agents, multi-robot systems, reinforcement learning in robotics, trustworthy autonomy, and robot navigation.
     - title: Ph.D. Studies in Electrical Engineering
       institution: University of California, Riverside
       year: Mar. 2024 - Aug. 2026
       location: Riverside, CA
       description:
-        - Ph.D. student from Mar. 2024 to Aug. 2026 in the <a href="https://tasl.ucr.edu">Trustworthy Autonomous Systems Laboratory (TASL)</a>, advised by Prof. Jiachen Li.
+        - Ph.D. student from Mar. 2024 to Aug. 2026 in the <a href="https://www.ucr.edu">Trustworthy Autonomous Systems Laboratory (TASL)</a>, advised by Prof. Jiachen Li.
         - Research on the generalization of multi-robot collaboration. Transferred to Georgia Tech in Aug. 2026.
     - title: M.S. in Computer Science
       institution: University of Southern California
@@ -58,7 +58,7 @@
         - Designed benchmark experiments across multi-robot and embodied-agent tasks to evaluate task completion, robustness, recovery efficiency, generalization, and recovery cost across diverse execution failures.
     - title: Robotics Research Intern
       institution: AlphaZ, Inc.
-      year: Jun. 2025 - Dec. 2025
+      year: Jul. 2025 - Dec. 2025
       description:
         - Developed <b>StratMamba</b>, a dual-stream Mamba-based PPO architecture that separates reactive obstacle processing from strategic goal-directed navigation for efficient LiDAR-based obstacle avoidance in cluttered environments.
         - Built scalable training and evaluation pipelines in IsaacLab and Gazebo for obstacle-rich navigation with quadruped and wheeled robots, and deployed the learned policy on a real Unitree GO1 robot using ROS2, RSLidar-16, VICON localization, and real-time velocity control.
