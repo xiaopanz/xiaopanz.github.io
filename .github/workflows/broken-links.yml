@@ -53,12 +53,26 @@ jobs:
           lycheeVersion: v0.24.2
           # Check external links in personal content; theme docs and demo posts are not published.
           # The companion site check validates internal links after Liquid is rendered.
+          # Google Scholar rate-limits automated requests; keep its link for visitors.
           args: >-
             --exclude '^file://'
+            --exclude '^https://scholar\.google\.com/'
             --exclude-path _pages/404.md
             --exclude-path _pages/dropdown.md
             --max-concurrency 8 --max-retries 2 --timeout 30
             --verbose --no-progress './_pages/*.md' './_news/*.md'
+      - name: Annotate failed links
+        if: failure()
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          report = Path("lychee/out.md")
+          if report.exists():
+              for line in report.read_text().splitlines():
+                  if line.startswith(("* [", "- [")):
+                      message = line.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
+                      print(f"::error title=Broken link::{message}")
+          PY
       - name: Upload link report
         if: always()
         uses: actions/upload-artifact@v6
